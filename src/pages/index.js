@@ -1,18 +1,33 @@
 import React, { useState } from 'react'
 import '../styles/index.scss'
 
-import Screen1 from '../components/screen1'
-import Screen2 from '../components/screen2'
+import Screen from '../components/screen'
 
 import bgImage from '../images/background.png'
+
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Index = () => {
   
   const [currentScreen, setCurrentScreen] = useState(0)
-  
-  const screens = [<Screen1 screenData={{currentScreen, setCurrentScreen}} />, 
-                  <Screen2 screenData={{currentScreen, setCurrentScreen}} />]
 
+  const screenData = { currentScreen, setCurrentScreen }
+
+  const screen1 = <Screen isPrevScreen={false} isNextScreen={true} screenData={screenData}>
+                    <div className="hero-body" style={{justifyContent: 'center'}}>
+                      <StaticImage src='../images/hero image.png' alt="the app for fashion lovers" placeholder="blurred" />
+                    </div>
+                  </Screen>
+
+  const screen2 = <Screen isPrevScreen={true} isNextScreen={true} screenData={screenData}>
+                    <div className="hero-body">
+                      <p className="title">
+                        baffs
+                      </p>
+                    </div>
+                  </Screen>
+  
+  const screens = [ screen1, screen2 ]
 
   return (
     <section className="hero is-fullheight is-primary" style={{ backgroundImage: `url(${bgImage})` }}>
