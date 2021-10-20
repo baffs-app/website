@@ -1,22 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/index.scss'
 
-import { StaticImage } from 'gatsby-plugin-image'
+import Screen1 from '../components/screen1'
+import Screen2 from '../components/screen2'
+
 import bgImage from '../images/background.png'
 
-import Hanger from '../components/hanger'
-
 const Index = () => {
+  
+  const [currentScreen, setCurrentScreen] = useState(0)
+  
+  const screens = [<Screen1 screenData={{currentScreen, setCurrentScreen}} />, 
+                  <Screen2 screenData={{currentScreen, setCurrentScreen}} />]
 
-  const prev = 'prev'
-  const next = 'next'
 
   return (
-    <section className="hero is-fullheight is-primary">
-      <div className="hero-body" style={{justifyContent: 'center', backgroundImage: `url(${bgImage})`}}>
-        <StaticImage src='../images/hero image.png' alt="the app for fashion lovers" placeholder="blurred" />
-        <Hanger navigateTo={next} />
-      </div>
+    <section className="hero is-fullheight is-primary" style={{ backgroundImage: `url(${bgImage})` }}>
+      {screens[currentScreen]}
     </section>
   )
 }
