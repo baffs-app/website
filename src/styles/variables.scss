@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inconsolata:wght@400;500&display=swap');
 
 // colours
+$blue: #090171;
+$green: #05CD75;
+$red: #E74C3C;
+$white: #FFFDFF;
+$yellow: #F4E409;
+
+// Derived variables
+$primary: $blue;
 
 // fonts
+$family-primary: 'Archivo Black', sans-serif;
+$family-secondary: 'Inconsolata', monospace;
 
 // sizes
