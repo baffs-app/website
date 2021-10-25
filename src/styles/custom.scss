@@ -9,8 +9,7 @@
 }
 
 .screen2-right {
-    p {
-        width: 80%;
-        margin-left: 10%;
-    }
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
 }
