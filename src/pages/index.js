@@ -20,10 +20,14 @@ const Index = () => {
                   </Screen>
 
   const screen2 = <Screen isPrevScreen={true} isNextScreen={true} screenData={screenData}>
-                    <div className="hero-body">
-                      <p className="title">
-                        baffs
-                      </p>
+                    <div className="hero-body columns" style={{padding: 0}}>
+                      <div className="column is-half">
+                      </div>
+                      <div className="column is-half has-text-centered screen2-right py-6" style={{backgroundColor: 'white', height: '100vh'}}>
+                        <p className="is-size-4">
+                          baffs is a marketplace app and community for, by and of people who care about looking good.
+                        </p>
+                      </div>
                     </div>
                   </Screen>
   

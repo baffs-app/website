@@ -3,4 +3,9 @@
 @import "variables.scss";
 @import "custom.scss";
 
+p {
+    color: $blue;
+    font-family: $family-secondary;
+}
+
 @import "~bulma/bulma.sass";
