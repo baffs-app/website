@@ -12,6 +12,8 @@ import illustration2 from '../images/illustrations/illustration2.png'
 import illustration3 from '../images/illustrations/illustration3.png'
 import illustration4 from '../images/illustrations/illustration4.png'
 
+import SeoComponent from '../components/seo'
+
 const Index = () => {
   
   const [currentScreen, setCurrentScreen] = useState(0)
@@ -74,6 +76,7 @@ const Index = () => {
 
   return (
     <section className="hero is-fullheight is-primary" style={{ backgroundImage: `url(${bgImage})` }}>
+      <SeoComponent />
       {screens[currentScreen]}
     </section>
   )

@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "baffs-website",
+    siteUrl: "https://www.baffs.app",
+    title: "Baffs",
+    description: "The app for fashion lovers",
+    image: "src/images/icon.png"
   },
   plugins: [
     "gatsby-plugin-image",
