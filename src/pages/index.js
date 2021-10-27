@@ -71,8 +71,29 @@ const Index = () => {
                       </div>
                     </div>
                   </Screen>
+
+  const sessionsScreen = <Screen isPrevScreen={true} isNextScreen={true} screenData={screenData}>
+                            <div className="hero-body columns" style={{padding: 0, marginBottom: 0}}>
+                              <div className="column is-5 has-text-centered screen2-right py-6 px-6" style={{backgroundColor: 'white', height: '100vh', justifyContent: 'center'}}>
+                                <h4 className="has-text-left">
+                                  We invited our fave fashionistas over to come talk to us about their style
+                                </h4>
+                                <h4 className="has-text-left mt-6">
+                                  Check it out:
+                                </h4>
+                                <button className="button is-large is-danger is-size-3 is-radiusless" style={{
+                                  position: 'absolute', left: '50%', bottom: '10%', transform: `translate(-60%)`,
+                                  boxShadow: `8px 8px 1px rgba(9,1,113,0.7)`
+                                }}>
+                                  Baffs Sessions
+                                </button>
+                              </div>
+                              <div className="column is-7">
+                              </div>
+                            </div>
+                          </Screen>
   
-  const screens = [ formScreen, landingScreen ]
+  const screens = [ formScreen, sessionsScreen, landingScreen ]
 
   return (
     <section className="hero is-fullheight is-primary" style={{ backgroundImage: `url(${bgImage})` }}>
