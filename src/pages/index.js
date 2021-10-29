@@ -12,6 +12,8 @@ import illustration2 from '../images/illustrations/illustration2.png'
 import illustration3 from '../images/illustrations/illustration3.png'
 import illustration4 from '../images/illustrations/illustration4.png'
 
+import image1 from '../images/sessions/session-1.jpg'
+
 import SeoComponent from '../components/seo'
 
 const Index = () => {
@@ -76,7 +78,7 @@ const Index = () => {
                             <div className="hero-body columns" style={{padding: 0, marginBottom: 0}}>
                               <div className="column is-5 has-text-centered screen2-right py-6 px-6" style={{backgroundColor: 'white', height: '100vh', justifyContent: 'center'}}>
                                 <h4 className="has-text-left">
-                                  We invited our fave fashionistas over to come talk to us about their style
+                                  We invited some of our fave fashionistas over to talk to us about their style
                                 </h4>
                                 <h4 className="has-text-left mt-6">
                                   Check it out:
@@ -88,7 +90,14 @@ const Index = () => {
                                   Baffs Sessions
                                 </button>
                               </div>
-                              <div className="column is-7">
+                              <div className="column columns is-7" style={{height: '100vh'}}>
+                                  <div className="column is-half session-img-container">
+                                    {/* <StaticImage src="../images/sessions/session-1.jpg" alt="Baffs session 1" className="session-img" layout="fullWidth" /> the image is being cropped for some reason */}
+                                    <img src={image1} alt="Baffs session 1" className="session-img" style={{transform: 'rotate(-12deg)', objectFit: 'contain'}} />
+                                  </div>
+                                  <div className="column is-half session-img-container">
+                                    <StaticImage src="../images/sessions/session-2.jpg" alt="Baffs session 2" className="session-img" style={{transform: 'rotate(12deg'}} />
+                                  </div>
                               </div>
                             </div>
                           </Screen>
