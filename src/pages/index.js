@@ -16,6 +16,8 @@ import image1 from '../images/sessions/session-1.jpg'
 
 import SeoComponent from '../components/seo'
 
+import { Link } from 'gatsby'
+
 const Index = () => {
   
   const [currentScreen, setCurrentScreen] = useState(0)
@@ -83,14 +85,15 @@ const Index = () => {
                                 <h4 className="has-text-left mt-6">
                                   Check it out:
                                 </h4>
-                                <button className="button is-large is-danger is-size-3 is-radiusless" style={{
+                                <Link to="/sessions" className="button is-large is-danger is-size-3 is-radiusless is-family-primary" style={{
                                   position: 'absolute', left: '50%', bottom: '10%', transform: `translate(-60%)`,
-                                  boxShadow: `-4px 6px 1px rgba(0,0,0,0.25)`
+                                  zIndex: '10', 
+                                  boxShadow: `8px 8px 1px rgba(0,0,0,0.25)`
                                 }}>
                                   Baffs Sessions
-                                </button>
+                                </Link>
                               </div>
-                              <div className="column columns is-7" style={{height: '100vh'}}>
+                              <div className="column columns is-7">
                                   <div className="column is-half session-img-container">
                                     {/* <StaticImage src="../images/sessions/session-1.jpg" alt="Baffs session 1" className="session-img" layout="fullWidth" /> the image is being cropped for some reason */}
                                     <img src={image1} alt="Baffs session 1" className="session-img" style={{transform: 'rotate(-12deg)', objectFit: 'contain'}} />

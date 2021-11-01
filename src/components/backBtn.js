@@ -5,11 +5,9 @@ import { Icon } from '@iconify/react';
 
 const BackButton = () => {
     return (
-        <Link to="/" style={{
-            position: 'absolute',
-            top: '5%', left: '5%'
-        }} className="is-size-4">
-            Back to Baffs
+        <Link to="/" className="is-size-4">
+            <span style={{verticalAlign: 'middle', marginRight: '.5rem'}}><Icon icon="grommet-icons:previous" /></span>
+            <span>Back to Baffs</span>
         </Link>
     )
 }
