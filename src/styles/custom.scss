@@ -13,6 +13,8 @@
     justify-content: space-between;
 }
 
+// Sessions
+
 .session-img-container {
     padding: 4.5rem !important;
     position: relative;
@@ -27,3 +29,5 @@
     max-height: 100%;
     border: 8px solid #fff;
 }
+
+.rotate-left { transform: rotate(-5deg); } .rotate-right { transform: rotate(5deg); }

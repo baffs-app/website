@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.baffs.app",
@@ -25,6 +27,14 @@ module.exports = {
       },
       __key: "images",
     },
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `qsaq1n2od0me`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
   ],
 };
