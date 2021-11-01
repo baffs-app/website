@@ -85,7 +85,7 @@ const Index = () => {
                                 </h4>
                                 <button className="button is-large is-danger is-size-3 is-radiusless" style={{
                                   position: 'absolute', left: '50%', bottom: '10%', transform: `translate(-60%)`,
-                                  boxShadow: `8px 8px 1px rgba(9,1,113,0.7)`
+                                  boxShadow: `-4px 6px 1px rgba(0,0,0,0.25)`
                                 }}>
                                   Baffs Sessions
                                 </button>
