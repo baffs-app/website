@@ -78,32 +78,29 @@ const Index = () => {
 
   const sessionsScreen = <Screen isPrevScreen={true} isNextScreen={true} screenData={screenData}>
                             <div className="hero-body columns" style={{padding: 0, marginBottom: 0}}>
-                              <div className="column is-5 has-text-centered formscreen-right py-6 px-6" style={{backgroundColor: 'white', height: '100vh', justifyContent: 'center'}}>
-                                <h4 className="has-text-left has-text-justified-mobile">
+                              <div className="column is-5 has-text-centered formscreen-right sessions-screen py-6 px-6" style={{backgroundColor: 'white', height: '100vh', justifyContent: 'center'}}>
+                                <div className="is-mobile columns sessions-text mb-3">
+                                  <img src={image1} alt="Baffs session 1" className="column is-half" style={{transform: 'rotate(-12deg)', objectFit: 'contain'}} />
+                                  <StaticImage src="../images/sessions/session2.jpg" alt="Baffs session 2" className="column is-half" style={{transform: 'rotate(12deg'}} />
+                                </div>
+                                <h4 className="has-text-left has-text-justified-mobile is-size-5-mobile">
                                   We invited some of our fave fashionistas over to talk to us about their style
                                 </h4>
-                                <h4 className="has-text-left mt-6">
+                                <h4 className="has-text-left text-heading is-size-5-mobile">
                                   Check it out:
                                 </h4>
-                                <Link to="/sessions" className="button is-large is-danger is-size-3 is-radiusless is-family-primary is-desktop" style={{
-                                  position: 'absolute', left: '50%', bottom: '10%', transform: `translate(-60%)`,
-                                  zIndex: '10', 
-                                  boxShadow: `8px 8px 1px rgba(0,0,0,0.25)`
-                                }}>
+                                <Link to="/sessions" className="button is-danger is-size-4 is-radiusless is-family-primary sessions-btn is-mobile">
+                                    Baffs Sessions
+                                  </Link>
+                                <Link to="/sessions" className="button is-large is-danger is-size-3 is-radiusless is-family-primary sessions-btn is-desktop">
                                   Baffs Sessions
                                 </Link>
                               </div>
-                              <div className="column columns is-7">
+                              <div className="column columns is-7 is-desktop">
                                   <div className="column is-half session-img-container">
                                     {/* <StaticImage src="../images/sessions/session1.jpg" alt="Baffs session 1" className="session-img" layout="fullWidth" /> */}
                                     <img src={image1} alt="Baffs session 1" className="session-img" style={{transform: 'rotate(-12deg)', objectFit: 'contain'}} />
                                   </div>
-                                  <Link to="/sessions" className="button is-danger is-size-4 is-radiusless is-family-primary sessions-btn-mobile is-mobile" style={{
-                                      zIndex: '10', 
-                                      boxShadow: `8px 8px 1px rgba(0,0,0,0.25)`
-                                  }}>
-                                    Baffs Sessions
-                                  </Link>
                                   <div className="column is-half session-img-container">
                                     <StaticImage src="../images/sessions/session2.jpg" alt="Baffs session 2" className="session-img" style={{transform: 'rotate(12deg'}} />
                                   </div>

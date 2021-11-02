@@ -1,5 +1,5 @@
 .is-desktop {
-    display: block !important
+    display: flex !important
 } .is-mobile {
     display: none !important;
 }
@@ -28,6 +28,10 @@
     margin-bottom: 3rem !important;
 }
 
+.text-heading {
+    margin: 3rem 0 !important
+}
+
 // Sessions
 
 .session-img-container {
@@ -48,6 +52,26 @@
 
     div p {
         color: $green;
+    }
+}
+
+.sessions-btn {
+
+    &.is-mobile {
+        z-index: 10;
+        box-shadow: 8px 8px 1px rgba(0,0,0,0.25);
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    &.is-desktop {
+        z-index: 10;
+        box-shadow: 8px 8px 1px rgba(0,0,0,0.25);
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translate(-60%);
     }
 }
 
@@ -82,7 +106,7 @@
     .is-desktop {
         display: none !important
     } .is-mobile {
-        display: block !important;
+        display: flex !important;
     }
 
     .hanger {
@@ -102,19 +126,16 @@
         }
     }
 
+    .sessions-screen {
+        min-height: 100vh;
+    }
+
     .formscreen-right {
         padding: 0.75rem 3rem !important
     }
 
-    .form-heading, .form-button {
+    .form-heading, .form-button, .text-heading {
         margin: 1.5rem 0 !important
-    }
-
-    .sessions-btn-mobile {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-        width: 70%;
     }
 
     .session-interview-container {
