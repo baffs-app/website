@@ -7,7 +7,7 @@ const Hanger = ({ navigateTo, screenData }) => {
 
     const { currentScreen, setCurrentScreen } = screenData
 
-    const { FWD, BACK } = navigation
+    // const { FWD, BACK } = navigation
 
     let divStyle;
     let iconStyle;
