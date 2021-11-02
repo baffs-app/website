@@ -1,25 +1,34 @@
 import React from 'react'
 
 import { Icon } from '@iconify/react';
-
-export const navigations = {
-    prev: 'prev',
-    next: 'next'
-}
+import { navigation } from '../helpers/constants'
 
 const Hanger = ({ navigateTo, screenData }) => {
 
     const { currentScreen, setCurrentScreen } = screenData
 
-    const style = navigateTo === navigations.next ? { right: '5%', transform: 'rotate(90deg)' } : { left: '5%', transform: 'rotate(-90deg' }
+    const { FWD, BACK } = navigation
+
+    let divStyle;
+    let iconStyle;
+    if(navigateTo === navigation.FWD) {
+        divStyle = { right: '5%' } 
+        iconStyle = { transform: 'rotate(90deg)' }
+    } else {
+        divStyle = { left: '5%' } 
+        iconStyle = { transform: 'rotate(-90deg)' }
+    }
 
     return (
-        <Icon icon="icon-park-outline:hanger" 
-            color="#05cd75" 
-            style={style} 
-            className="hanger"
-            onClick={() => { setCurrentScreen(navigateTo === navigations.next ? currentScreen + 1 : currentScreen - 1 )}}
-        />
+        <div className="hanger" style={divStyle}>
+            <Icon icon="icon-park-outline:hanger" 
+                color="#05cd75"
+                style={iconStyle}
+                onClick={() => { setCurrentScreen(navigateTo === navigation.FWD ? currentScreen + 1 : currentScreen - 1 )}}
+            />
+            { navigateTo === FWD && <span className="is-size-5 has-text-primary">Next</span>}
+            { navigateTo === BACK && <span className="is-size-5 has-text-primary">Prev</span>}
+        </div>
     )
 }
 
