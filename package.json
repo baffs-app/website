@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@iconify/react": "^3.0.1",
-    "dotenv": "^8.6.0"
+    "dotenv": "^8.6.0",
+    "nanoid": "^3.1.30"
   }
 }

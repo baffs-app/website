@@ -3,9 +3,9 @@ import '../styles/index.scss'
 
 import SeoComponent from './seo'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, sectionPadding }) => {
     return (
-        <section className="section">
+        <section className={sectionPadding ?  `${sectionPadding}`: 'section'}>
            <SeoComponent />
            { children } 
         </section>

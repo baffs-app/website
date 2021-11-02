@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: $size-1 !important; } h2 { font-size: $size-2 !important; } h3 { font-size: $size-3 !important; } 
 h4 { font-size: $size-4 !important; } h5 { font-size: $size-5 !important; } h6 { font-size: $size-6 !important; }
 
-p {
+p, svg {
     color: $blue;
 }
 
@@ -28,5 +28,10 @@ input {
     line-height: .85
 }
 
+a:hover {
+    svg {
+        color: $green;
+    }
+}
 
 @import "~bulma/bulma.sass";

@@ -26,4 +26,29 @@
     border: 8px solid #fff;
 }
 
+.sessions-link:hover {
+    img {
+        border: 2px solid $green;
+    }
+
+    div p {
+        color: $green;
+    }
+}
+
 .rotate-left { transform: rotate(-5deg); } .rotate-right { transform: rotate(5deg); }
+
+// Single Session
+.session-photo-controls {
+    display: flex;
+    justify-content: space-between;
+
+    .is-clickable:hover {
+        color: $green
+    }
+}
+
+.session-interview-text {
+    height: 600px;
+    overflow-y: auto;
+}
