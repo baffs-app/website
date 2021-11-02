@@ -82,7 +82,7 @@ const Index = () => {
                               <div className="column is-5 has-text-centered formscreen-right sessions-screen py-6 px-6" style={{backgroundColor: 'white', height: '100vh', justifyContent: 'center'}}>
                                 <div className="is-mobile columns sessions-text mb-3">
                                   <img src={image1} alt="Baffs session 1" className="column is-half session-img" style={{transform: 'rotate(-12deg)', objectFit: 'contain'}} />
-                                  <img src={image2} alt="Baffs session 2" className="column is-half session-img" style={{transform: 'rotate(12deg'}} />
+                                  <img src={image2} alt="Baffs session 2" className="column is-half session-img" style={{transform: 'rotate(12deg)', objectFit: 'contain'}} />
                                 </div>
                                 <h4 className="has-text-left has-text-justified-mobile is-size-5-mobile">
                                   We invited some of our fave fashionistas over to talk to us about their style
@@ -90,7 +90,7 @@ const Index = () => {
                                 <h4 className="has-text-left text-heading is-size-5-mobile">
                                   Check it out:
                                 </h4>
-                                <Link to="/sessions" className="button is-danger is-size-4 is-radiusless is-family-primary sessions-btn is-mobile">
+                                <Link to="/sessions" className="button is-danger is-size-4 is-radiusless is-family-primary sessions-btn is-mobile" style={{padding: '1.5rem', marginBottom: '3rem' }}>
                                     Baffs Sessions
                                   </Link>
                                 <Link to="/sessions" className="button is-large is-danger is-size-3 is-radiusless is-family-primary sessions-btn is-desktop">
