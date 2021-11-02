@@ -12,7 +12,7 @@ import illustration2 from '../images/illustrations/illustration2.png'
 import illustration3 from '../images/illustrations/illustration3.png'
 import illustration4 from '../images/illustrations/illustration4.png'
 
-import image1 from '../images/sessions/session-1.jpg'
+import image1 from '../images/sessions/session1.jpg'
 
 import SeoComponent from '../components/seo'
 
@@ -95,11 +95,11 @@ const Index = () => {
                               </div>
                               <div className="column columns is-7">
                                   <div className="column is-half session-img-container">
-                                    {/* <StaticImage src="../images/sessions/session-1.jpg" alt="Baffs session 1" className="session-img" layout="fullWidth" /> the image is being cropped for some reason */}
+                                    {/* <StaticImage src="../images/sessions/session1.jpg" alt="Baffs session 1" className="session-img" layout="fullWidth" /> */}
                                     <img src={image1} alt="Baffs session 1" className="session-img" style={{transform: 'rotate(-12deg)', objectFit: 'contain'}} />
                                   </div>
                                   <div className="column is-half session-img-container">
-                                    <StaticImage src="../images/sessions/session-2.jpg" alt="Baffs session 2" className="session-img" style={{transform: 'rotate(12deg'}} />
+                                    <StaticImage src="../images/sessions/session2.jpg" alt="Baffs session 2" className="session-img" style={{transform: 'rotate(12deg'}} />
                                   </div>
                               </div>
                             </div>
