@@ -52,7 +52,7 @@ const Index = () => {
 
   const formScreen = <Screen isPrevScreen={false} isNextScreen={true} screenData={screenData}>
                     <div className="hero-body columns" style={{padding: 0, marginBottom: 0}}>
-                      <div className="column is-half">
+                      <div className="column is-half is-first-column">
                         <h1 className="has-text-centered" style={textStyle}>
                           { text }
                         </h1>
@@ -60,16 +60,16 @@ const Index = () => {
                           <img src={illustration} alt={text} />
                         </div>
                       </div>
-                      <div className="column is-half has-text-centered screen2-right py-6 px-6" style={{backgroundColor: 'white', height: '100vh'}}>
-                        <p className="is-size-3">
+                      <div className="column is-half has-text-centered formscreen-right" style={{backgroundColor: 'white', height: '100vh'}}>
+                        <p className="is-size-3 is-size-4-mobile has-text-justified-mobile">
                           baffs is a marketplace app and community for, by and of people who care about looking good.
                         </p>
                         <div>
-                          <h3 className="has-text-left mb-6">Sign up for take off</h3>
+                          <h3 className="has-text-left has-text-justified-mobile form-heading">Sign up for take off</h3>
                           <form action="https://getform.io/f/9b9cf136-2a4a-4eee-914e-bbd473689f9c" method="POST" className="submit-form" target="_blank">
-                            <input type="text" placeholder="name" name="name" className="my-3 py-2 is-size-6 has-text-success column is-5" />
-                            <input type="email" placeholder="email" name="email"  className="my-3 py-2 is-size-6 has-text-success column is-5 is-offset-6"/>
-                            <button className="my-6 button is-primary is-medium"><span role="img" aria-label="rocket emoji" className="is-size-3">🚀</span></button>
+                            <input type="text" placeholder="name" name="name" className="my-3 py-2 is-size-6 has-text-success column is-5 is-12-mobile" />
+                            <input type="email" placeholder="email" name="email"  className="my-3 py-2 is-size-6 has-text-success column is-5 is-offset-6 is-12-mobile"/>
+                            <button className="button is-primary is-medium form-button mb-6"><span role="img" aria-label="rocket emoji" className="is-size-3">🚀</span></button>
                           </form>
                         </div>
                       </div>
@@ -78,14 +78,14 @@ const Index = () => {
 
   const sessionsScreen = <Screen isPrevScreen={true} isNextScreen={true} screenData={screenData}>
                             <div className="hero-body columns" style={{padding: 0, marginBottom: 0}}>
-                              <div className="column is-5 has-text-centered screen2-right py-6 px-6" style={{backgroundColor: 'white', height: '100vh', justifyContent: 'center'}}>
-                                <h4 className="has-text-left">
+                              <div className="column is-5 has-text-centered formscreen-right py-6 px-6" style={{backgroundColor: 'white', height: '100vh', justifyContent: 'center'}}>
+                                <h4 className="has-text-left has-text-justified-mobile">
                                   We invited some of our fave fashionistas over to talk to us about their style
                                 </h4>
                                 <h4 className="has-text-left mt-6">
                                   Check it out:
                                 </h4>
-                                <Link to="/sessions" className="button is-large is-danger is-size-3 is-radiusless is-family-primary" style={{
+                                <Link to="/sessions" className="button is-large is-danger is-size-3 is-radiusless is-family-primary is-desktop" style={{
                                   position: 'absolute', left: '50%', bottom: '10%', transform: `translate(-60%)`,
                                   zIndex: '10', 
                                   boxShadow: `8px 8px 1px rgba(0,0,0,0.25)`
@@ -98,6 +98,12 @@ const Index = () => {
                                     {/* <StaticImage src="../images/sessions/session1.jpg" alt="Baffs session 1" className="session-img" layout="fullWidth" /> */}
                                     <img src={image1} alt="Baffs session 1" className="session-img" style={{transform: 'rotate(-12deg)', objectFit: 'contain'}} />
                                   </div>
+                                  <Link to="/sessions" className="button is-danger is-size-4 is-radiusless is-family-primary sessions-btn-mobile is-mobile" style={{
+                                      zIndex: '10', 
+                                      boxShadow: `8px 8px 1px rgba(0,0,0,0.25)`
+                                  }}>
+                                    Baffs Sessions
+                                  </Link>
                                   <div className="column is-half session-img-container">
                                     <StaticImage src="../images/sessions/session2.jpg" alt="Baffs session 2" className="session-img" style={{transform: 'rotate(12deg'}} />
                                   </div>

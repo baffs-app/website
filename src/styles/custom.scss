@@ -1,3 +1,9 @@
+.is-desktop {
+    display: block !important
+} .is-mobile {
+    display: none !important;
+}
+
 .hanger {
     position: absolute;
     bottom: 5%;
@@ -9,10 +15,17 @@
     }
 }
 
-.screen2-right {
+
+.formscreen-right {
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
+
+    padding: 3rem !important
+}
+
+.form-heading, .form-button {
+    margin-bottom: 3rem !important;
 }
 
 // Sessions
@@ -50,7 +63,76 @@
     }
 }
 
+.session-interview-container {
+    margin: 0 3rem !important
+}
+
 .session-interview-text {
     height: 600px;
     overflow-y: auto;
+}
+
+.session-section-padding {
+    padding: 0 3rem !important
+}
+
+// Mobile Styles
+@media only screen and (max-width: 768px) {
+
+    .is-desktop {
+        display: none !important
+    } .is-mobile {
+        display: block !important;
+    }
+
+    .hanger {
+        position: fixed;
+        opacity: 0.5
+    }
+
+    .hero-body.columns {
+        display: flex;
+        flex-direction: column;
+
+        .is-first-column {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .formscreen-right {
+        padding: 0.75rem 3rem !important
+    }
+
+    .form-heading, .form-button {
+        margin: 1.5rem 0 !important
+    }
+
+    .sessions-btn-mobile {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+
+    .session-interview-container {
+        margin: 0 !important
+    }
+    .session-interview-text {
+        height: unset;
+        overflow-y: unset;
+    }
+    .session-columns {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .session-section-padding {
+        padding: 0 1.5rem !important
+    }
+    .session-nav-mobile {
+        display: flex !important;
+        justify-content: space-between;
+    }
 }
