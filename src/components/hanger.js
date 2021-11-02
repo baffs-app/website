@@ -26,8 +26,8 @@ const Hanger = ({ navigateTo, screenData }) => {
                 style={iconStyle}
                 onClick={() => { setCurrentScreen(navigateTo === navigation.FWD ? currentScreen + 1 : currentScreen - 1 )}}
             />
-            { navigateTo === FWD && <span className="is-size-5 has-text-primary">Next</span>}
-            { navigateTo === BACK && <span className="is-size-5 has-text-primary">Prev</span>}
+            {/* { navigateTo === FWD && <span className="is-size-5 has-text-primary">Next</span>}
+            { navigateTo === BACK && <span className="is-size-5 has-text-primary">Prev</span>} */}
         </div>
     )
 }
