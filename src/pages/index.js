@@ -13,6 +13,7 @@ import illustration3 from '../images/illustrations/illustration3.png'
 import illustration4 from '../images/illustrations/illustration4.png'
 
 import image1 from '../images/sessions/session1.jpg'
+import image2 from '../images/sessions/session2.jpg'
 
 import SeoComponent from '../components/seo'
 
@@ -80,8 +81,8 @@ const Index = () => {
                             <div className="hero-body columns" style={{padding: 0, marginBottom: 0}}>
                               <div className="column is-5 has-text-centered formscreen-right sessions-screen py-6 px-6" style={{backgroundColor: 'white', height: '100vh', justifyContent: 'center'}}>
                                 <div className="is-mobile columns sessions-text mb-3">
-                                  <img src={image1} alt="Baffs session 1" className="column is-half" style={{transform: 'rotate(-12deg)', objectFit: 'contain'}} />
-                                  <StaticImage src="../images/sessions/session2.jpg" alt="Baffs session 2" className="column is-half" style={{transform: 'rotate(12deg'}} />
+                                  <img src={image1} alt="Baffs session 1" className="column is-half session-img" style={{transform: 'rotate(-12deg)', objectFit: 'contain'}} />
+                                  <img src={image2} alt="Baffs session 2" className="column is-half session-img" style={{transform: 'rotate(12deg'}} />
                                 </div>
                                 <h4 className="has-text-left has-text-justified-mobile is-size-5-mobile">
                                   We invited some of our fave fashionistas over to talk to us about their style
