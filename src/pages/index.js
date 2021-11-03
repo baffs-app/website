@@ -34,6 +34,7 @@ const Index = () => {
                     <div className="hero-body columns" style={{padding: 0, marginBottom: 0}}>
                       <div className="column is-half is-first-column p-0">
                         <img src={changeYourStyle} alt="Change your style animation" className="is-desktop" />
+                        <h3 className="is-mobile has-text-success mt-6">baffs</h3>
                         <img src={changeYourStyleMobile} alt="Change your style animation" className="is-mobile px-2" />
                       </div>
                       <div className="column is-half has-text-centered formscreen-right" style={{backgroundColor: 'white', height: '100vh'}}>
