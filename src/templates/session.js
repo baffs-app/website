@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { useStaticQuery, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import BodyTextTemplate from '../components/bodyTextTemplate'
 
@@ -35,12 +35,15 @@ export const query = graphql`
             sessionNumber
         }
 
-        allContentfulSession(filter: {sessionNumber: {eq: $sessionNumber }}) {
+        allContentfulSession{
             edges {
                 next {
                     sessionNumber
                 }
                 previous {
+                    sessionNumber
+                }
+                node {
                     sessionNumber
                 }
             }
@@ -73,9 +76,12 @@ const Session = ({ data }) => {
 
     const { FWD, BACK } = navigation
 
-    const neighbouringSessions = data.allContentfulSession.edges[0]
-    const prevSessionLink = neighbouringSessions.previous ? neighbouringSessions.previous : '/sessions'
-    const nextSessionLink = neighbouringSessions.next ? neighbouringSessions.next : '/sessions'
+    const neighbouringSessions = data.allContentfulSession.edges.filter(({ node }) => node.sessionNumber === sessionNumber)[0]
+    const { previous, next } = neighbouringSessions
+    
+    const sessionsRoot = '/sessions'
+    const prevSessionLink = previous ? `${sessionsRoot}/${previous.sessionNumber}` : sessionsRoot
+    const nextSessionLink = next ? `${sessionsRoot}/${next.sessionNumber} `: sessionsRoot
 
     return (
         <Layout sectionPadding='session-section-padding'>

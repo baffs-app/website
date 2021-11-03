@@ -44,8 +44,8 @@ const Sessions = () => {
                 {
                     sessions.map(({ name, age, occupation, photos, sessionNumber }, index) => {
                         const rotateEffect = index % 2 === 0 ? 'rotate-left' : 'rotate-right'
-                        return <div className="column is-half is-size-4 p-6 mt-6 has-text-centered">
-                                    <Link to={`/sessions/${sessionNumber}`} key={nanoid()} className="sessions-link">
+                        return <div className="column is-half is-size-4 p-6 mt-6 has-text-centered" key={nanoid()}>
+                                    <Link to={`/sessions/${sessionNumber}`} className="sessions-link">
                                         <GatsbyImage image={getImage(photos[0])} alt={name} className={rotateEffect} />
                                         <div className="mt-5">
                                             <p className="reduce-line-height"><span>{name.split(' ')[0]}</span>, <span>{age}</span></p>
