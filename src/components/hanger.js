@@ -12,10 +12,10 @@ const Hanger = ({ navigateTo, screenData }) => {
     let divStyle;
     let iconStyle;
     if(navigateTo === navigation.FWD) {
-        divStyle = { right: '5%' } 
+        divStyle = { right: '2.5%' } 
         iconStyle = { transform: 'rotate(90deg)' }
     } else {
-        divStyle = { left: '5%' } 
+        divStyle = { left: '2.5%' } 
         iconStyle = { transform: 'rotate(-90deg)' }
     }
 
@@ -26,8 +26,10 @@ const Hanger = ({ navigateTo, screenData }) => {
                 style={iconStyle}
                 onClick={() => { setCurrentScreen(navigateTo === navigation.FWD ? currentScreen + 1 : currentScreen - 1 )}}
             />
-            {/* { navigateTo === FWD && <span className="is-size-5 has-text-primary">Next</span>}
-            { navigateTo === BACK && <span className="is-size-5 has-text-primary">Prev</span>} */}
+            {
+                currentScreen === 0 &&
+                    <span className="is-size-7 has-text-primary">see more</span>
+            }
         </div>
     )
 }
