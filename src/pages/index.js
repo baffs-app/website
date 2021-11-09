@@ -56,9 +56,9 @@ const Index = () => {
   const sessionsScreen = <Screen isPrevScreen={true} isNextScreen={true} screenData={screenData}>
                             <div className="hero-body columns" style={{padding: 0, marginBottom: 0}}>
                               <div className="column is-5 has-text-centered formscreen-right sessions-screen py-6 px-6" style={{backgroundColor: 'white', height: '100vh', justifyContent: 'center'}}>
-                                <div className="is-mobile columns sessions-text mb-3">
-                                  <img src={image1} alt="Baffs session 1" className="column is-half session-img" style={{transform: 'rotate(-12deg)', objectFit: 'contain'}} />
-                                  <img src={image2} alt="Baffs session 2" className="column is-half session-img" style={{transform: 'rotate(12deg)', objectFit: 'contain'}} />
+                                <div className="is-mobile columns session-img-container mb-3">
+                                  <StaticImage src="../images/sessions/session1.jpg" alt="Baffs session 1" className="column session-img" style={{transform: 'rotate(-12deg'}} />
+                                  <StaticImage src="../images/sessions/session2.jpg" alt="Baffs session 2" className="column session-img" style={{transform: 'rotate(12deg'}} />
                                 </div>
                                 <h4 className="has-text-left has-text-justified-mobile is-size-5-mobile">
                                   We invited some of our fave fashionistas over to talk to us about their style
@@ -75,8 +75,7 @@ const Index = () => {
                               </div>
                               <div className="column columns is-7 is-desktop">
                                   <div className="column is-half session-img-container">
-                                    {/* <StaticImage src="../images/sessions/session1.jpg" alt="Baffs session 1" className="session-img" layout="fullWidth" /> */}
-                                    <img src={image1} alt="Baffs session 1" className="session-img" style={{transform: 'rotate(-12deg)', objectFit: 'contain'}} />
+                                    <StaticImage src="../images/sessions/session1.jpg" alt="Baffs session 1" className="session-img" style={{transform: 'rotate(-12deg'}} />
                                   </div>
                                   <div className="column is-half session-img-container">
                                     <StaticImage src="../images/sessions/session2.jpg" alt="Baffs session 2" className="session-img" style={{transform: 'rotate(12deg'}} />

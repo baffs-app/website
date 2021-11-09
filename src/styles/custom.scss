@@ -39,7 +39,7 @@
 // Sessions
 
 .session-img-container {
-    padding: 5rem !important;
+    padding: 10% !important;
     position: relative;
 }
 
@@ -140,9 +140,12 @@
         min-height: 100vh;
     }
 
+    .session-img-container {
+        padding: 5% !important;
+    }
+
     .session-img {
-        border: none;
-        
+        border: none;   
     }
 
     .sessions-item:not(:first-of-type) {
