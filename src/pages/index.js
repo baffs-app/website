@@ -7,9 +7,6 @@ import bgImage from '../images/background.png'
 
 import { StaticImage } from 'gatsby-plugin-image'
 
-import image1 from '../images/sessions/session1.jpg'
-import image2 from '../images/sessions/session2.jpg'
-
 import changeYourStyle from '../images/change-your-style.gif'
 import changeYourStyleMobile from '../images/change-your-style-mobile.gif'
 
