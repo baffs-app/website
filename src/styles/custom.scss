@@ -79,6 +79,11 @@
     }
 }
 
+.sessions-item {
+    margin-top: 3rem !important;
+    padding: 3rem !important;
+}
+
 .rotate-left { transform: rotate(-5deg); } .rotate-right { transform: rotate(5deg); }
 
 // Single Session
@@ -138,6 +143,13 @@
     .session-img {
         border: none;
         
+    }
+
+    .sessions-item:not(:first-of-type) {
+        margin-top: 1rem !important;
+    }
+    .sessions-item {
+        padding: 1.5rem 3rem !important;
     }
 
     .formscreen-right {

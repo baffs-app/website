@@ -42,7 +42,7 @@ const Index = () => {
                           baffs is a marketplace app and community for fashion and style enthusiasts.
                         </p>
                         <div>
-                          <h3 className="has-text-left form-heading">Sign up for take off</h3>
+                          <h3 className="has-text-left has-text-centered-mobile form-heading">Sign up for take off</h3>
                           <form action="https://getform.io/f/9b9cf136-2a4a-4eee-914e-bbd473689f9c" method="POST" className="submit-form" target="_blank">
                             <input type="text" placeholder="name" name="name" className="my-3 py-2 is-size-6 has-text-success column is-5 is-12-mobile" />
                             <input type="email" placeholder="email" name="email"  className="my-3 py-2 is-size-6 has-text-success column is-5 is-offset-6 is-12-mobile"/>
