@@ -121,6 +121,32 @@ const Session = ({ data }) => {
                         </div>
                     </div>
                 </div>
+                <footer>
+                    <p className="has-text-centered is-size-4 is-size-5-mobile">Enjoyed this? Go on and spread the love:</p>
+                    <ul className="social-share">
+                        <li>
+                            <a href={`https://www.facebook.com/sharer/sharer.php?u=https://www.baffs.app${sessionsRoot}/${sessionNumber}`} target="_blank" rel="noopener noreferrer">
+                                <Icon icon="akar-icons:facebook-fill" className="is-clickable is-size-2" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href={`https://twitter.com/intent/tweet?url=https://www.baffs.app${sessionsRoot}/${sessionNumber}&text=We%20invite%20our%20favourite%20fashionistas%20to%20talk%20to%20us%20about%20their%20style.%20Hear%20what%20they%20have%20to%20say:`} target="_blank" rel="noopener noreferrer">
+                                <Icon icon="akar-icons:twitter-fill" className="is-clickable is-size-2" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href={`https://pinterest.com/pin/create/button/?url=https://www.baffs.app${sessionsRoot}/${sessionNumber}&media=&description=We%20invite%20our%20favourite%20fashionistas%20to%20talk%20to%20us%20about%20their%20style.%20Hear%20what%20they%20have%20to%20say:`} target="_blank" rel="noopener noreferrer">
+                                <Icon icon="akar-icons:pinterest-fill" className="is-clickable is-size-2" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href={`https://www.linkedin.com/shareArticle?mini=true&url=https://www.baffs.app${sessionsRoot}/${sessionNumber}`} target="_blank" rel="noopener noreferrer">
+                                <Icon icon="akar-icons:linkedin-fill" className="is-clickable is-size-2" />
+                            </a>
+                        </li>
+                    </ul>
+                    <p className="has-text-centered is-size-6 mt-4">&copy; Copyright Baffs App {new Date().getFullYear()}</p>
+                </footer>
             </section>
         </Layout>
     )

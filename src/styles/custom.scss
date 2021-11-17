@@ -36,6 +36,27 @@
     margin: 3rem 0 !important
 }
 
+ul.social-share {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 1rem 0 2rem 0;
+
+    li {
+        margin: 0 1rem;
+    }
+}
+
+.is-clickable:hover {
+    color: $green
+}
+
+footer { 
+    margin: 3rem 0 1.5rem 0;
+}
+
 // Sessions
 
 .session-img-container {
@@ -90,10 +111,6 @@
 .session-photo-controls {
     display: flex;
     justify-content: space-between;
-
-    .is-clickable:hover {
-        color: $green
-    }
 }
 
 .session-interview-container {
