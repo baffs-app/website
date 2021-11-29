@@ -15,7 +15,8 @@ const BodyTextTemplate = ({ richTextField }) => {
         },
       renderNode: {
         [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
-        [BLOCKS.HEADING_4]: (node, children) => <h4 className="has-text-justified">{children}</h4>
+        [BLOCKS.HEADING_4]: (node, children) => <h4 className="has-text-justified">{children}</h4>,
+        [BLOCKS.HEADING_6]: (node, children) => <h6 className="has-text-justified">{children}</h6>
       },
     }
 
