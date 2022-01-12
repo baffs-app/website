@@ -34,17 +34,19 @@ const Index = () => {
                         <p className="is-mobile has-text-success mt-6 is-size-4 has-text-centered" style={{width: '50%'}}>The app for fashion lovers</p>
                         <img src={changeYourStyleMobile} alt="Change your style animation" className="is-mobile px-2" />
                       </div>
-                      <div className="column is-half has-text-centered formscreen-right" style={{backgroundColor: 'white', height: '100vh'}}>
-                        <p className="is-size-3 is-size-4-mobile">
-                          baffs is a marketplace app and community for fashion and style enthusiasts.
+                      <div className="column is-half has-text-justified formscreen-right" style={{backgroundColor: 'white', height: '100vh', maxWidth: '100%'}}>
+                        <p>
+                          Baffs is a marketplace app and community for fashion and style enthusiasts to trade clothing items, 
+                          find style inspiration, express themselves and connect with one another.
                         </p>
-                        <div>
-                          <h3 className="has-text-left has-text-centered-mobile form-heading">Sign up for take off</h3>
-                          <form action="https://getform.io/f/9b9cf136-2a4a-4eee-914e-bbd473689f9c" method="POST" className="submit-form" target="_blank">
-                            <input type="text" placeholder="name" name="name" className="my-3 py-2 is-size-6 has-text-success column is-5 is-12-mobile" />
-                            <input type="email" placeholder="email" name="email"  className="my-3 py-2 is-size-6 has-text-success column is-5 is-offset-6 is-12-mobile"/>
-                            <button className="button is-primary is-medium form-button mb-6"><span role="img" aria-label="rocket emoji" className="is-size-3">🚀</span></button>
-                          </form>
+                        <div className="form-button">
+                          <a href="https://forms.gle/dYCpogFHmwuBqrhW9" target="_blank" rel="noopener noreferrer">
+                            <button className="button is-primary is-large is-size-3 is-size-4-mobile my-6">
+                              <span role="img" aria-label="rocket emoji" className="mr-2">🚀</span>
+                              Sign up for take off
+                              <span role="img" aria-label="rocket emoji" className="ml-2">🚀</span>
+                            </button>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -64,8 +66,8 @@ const Index = () => {
                                   Check it out:
                                 </h4>
                                 <Link to="/sessions" className="button is-danger is-size-4 is-radiusless is-family-primary sessions-btn is-mobile" style={{padding: '1.5rem', marginBottom: '3rem' }}>
-                                    Baffs Sessions
-                                  </Link>
+                                  Baffs Sessions
+                                </Link>
                                 <Link to="/sessions" className="button is-large is-danger is-size-3 is-radiusless is-family-primary sessions-btn is-desktop">
                                   Baffs Sessions
                                 </Link>

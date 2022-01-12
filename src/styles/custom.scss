@@ -14,7 +14,7 @@
     align-items: center;
     
     svg {
-        font-size: 3.5rem;
+        font-size: 5rem;
         filter: drop-shadow(0 2px 2px #fff);
     }
 }
@@ -23,13 +23,22 @@
 .formscreen-right {
     display: flex !important;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 
-    padding: 3rem !important
+    padding: 3rem !important;
+
+    p {
+        font-size: 1.75rem !important
+    }
 }
 
 .form-heading, .form-button {
     margin-bottom: 3rem !important;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
 }
 
 .text-heading {
@@ -173,7 +182,11 @@ footer {
     }
 
     .formscreen-right {
-        padding: 0.75rem 3rem !important
+        padding: 0.75rem 3rem !important;
+
+        p {
+            font-size: 1.5rem !important
+        }
     }
 
     .form-heading, .form-button, .text-heading {

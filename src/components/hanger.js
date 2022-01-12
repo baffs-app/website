@@ -28,7 +28,7 @@ const Hanger = ({ navigateTo, screenData }) => {
             />
             {
                 currentScreen === 0 &&
-                    <span className="is-size-7 has-text-primary">see more</span>
+                    <span className="is-size-5 has-text-primary">see more</span>
             }
         </div>
     )
