@@ -59,7 +59,7 @@ const Index = () => {
                   </Screen>
 
   const featuresScreen = <Screen isPrevScreen={true} isNextScreen={true} screenData={screenData}>
-                            <h1 className='has-text-white has-text-centered py-3'>Dive into the world of Baffs</h1>
+                            <h1 className='has-text-white has-text-centered py-3' style={{textShadow: '-4px 4px 6px rgba(237, 128, 128, 0.6'}}>Dive into the world of Baffs</h1>
                             <div className="hero-body columns pt-5 px-5" style={{padding: 0, marginBottom: 0, alignItems: 'unset'}}>
                               <div className='column is-6' style={{backgroundColor: 'white', height: '70vh', display: 'flex', justifyContent: 'center'}}>
                                 <StaticImage 
