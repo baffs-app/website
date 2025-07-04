@@ -22,7 +22,13 @@ const Index = () => {
 
   const landingScreen = <Screen isPrevScreen={true} isNextScreen={false} screenData={screenData}>
                           <div className="hero-body" style={{justifyContent: 'center'}}>
-                            <StaticImage src='../images/hero image.png' alt="the app for fashion lovers" placeholder="blurred" />
+                            <StaticImage 
+                              src='../images/hero image.png' 
+                              alt="the app for fashion lovers" 
+                              placeholder="blurred"
+                              loading="eager"
+                              formats={["auto", "webp"]}
+                            />
                           </div>
                         </Screen>
 
@@ -53,9 +59,18 @@ const Index = () => {
                   </Screen>
 
   const featuresScreen = <Screen isPrevScreen={true} isNextScreen={true} screenData={screenData}>
+                            <h1 className='has-text-white has-text-centered py-3'>Dive into the world of Baffs</h1>
                             <div className="hero-body columns pt-5 px-5" style={{padding: 0, marginBottom: 0, alignItems: 'unset'}}>
                               <div className='column is-6' style={{backgroundColor: 'white', height: '70vh', display: 'flex', justifyContent: 'center'}}>
-                                <StaticImage src="../images/screens/profile.png" alt="Profile screen 1" style={{maxHeight: '100%', width: 'auto', height: '100%', objectFit: 'contain', display: 'flex'}} imgStyle={{objectFit: 'contain', maxHeight: '100%', width: 'auto', height: '100%'}}/>
+                                <StaticImage 
+                                  src="../images/screens/profile.png" 
+                                  alt="Profile screen 1" 
+                                  style={{maxHeight: '100%', width: 'auto', height: '100%', objectFit: 'contain', display: 'flex'}} 
+                                  imgStyle={{objectFit: 'contain', maxHeight: '100%', width: 'auto', height: '100%'}}
+                                  placeholder="blurred"
+                                  loading="lazy"
+                                  formats={["auto", "webp"]}
+                                />
                               </div>
                               <div className="column is-6 py-6 px-6 has-text-centered" style={{backgroundColor: 'white', height: '70vh', display: 'flex', flexDirection: 'column'}}>
                                 <h2>Create a Profile</h2>
@@ -75,12 +90,28 @@ const Index = () => {
                                 <p className='my-3 is-size-4'>Sign up to Baffs</p>
                               </div>
                               <div className='column is-6' style={{backgroundColor: 'white', height: '70vh', display: 'flex', justifyContent: 'center'}}>
-                                <StaticImage src="../images/screens/upload.png" alt="Profile screen 1" style={{maxHeight: '100%', width: 'auto', height: '100%', objectFit: 'contain', display: 'flex'}} imgStyle={{objectFit: 'contain', maxHeight: '100%', width: 'auto', height: '100%'}}/>
+                                <StaticImage 
+                                  src="../images/screens/upload.png" 
+                                  alt="Upload screen" 
+                                  style={{maxHeight: '100%', width: 'auto', height: '100%', objectFit: 'contain', display: 'flex'}} 
+                                  imgStyle={{objectFit: 'contain', maxHeight: '100%', width: 'auto', height: '100%'}}
+                                  placeholder="blurred"
+                                  loading="lazy"
+                                  formats={["auto", "webp"]}
+                                />
                               </div>
                             </div>
                             <div className="hero-body columns pt-5 pb-5 px-5" style={{padding: 0, marginBottom: 0, alignItems: 'unset'}}>
                               <div className='column is-6' style={{backgroundColor: 'white', height: '70vh', display: 'flex', justifyContent: 'center'}}>
-                                <StaticImage src="../images/screens/sold.png" alt="Profile screen 1" style={{maxHeight: '100%', width: 'auto', height: '100%', objectFit: 'contain', display: 'flex'}} imgStyle={{objectFit: 'contain', maxHeight: '100%', width: 'auto', height: '100%'}}/>
+                                <StaticImage 
+                                  src="../images/screens/sold.png" 
+                                  alt="Sold screen" 
+                                  style={{maxHeight: '100%', width: 'auto', height: '100%', objectFit: 'contain', display: 'flex'}} 
+                                  imgStyle={{objectFit: 'contain', maxHeight: '100%', width: 'auto', height: '100%'}}
+                                  placeholder="blurred"
+                                  loading="lazy"
+                                  formats={["auto", "webp"]}
+                                />
                               </div>
                               <div className="column is-6 py-6 px-6 has-text-centered" style={{backgroundColor: 'white', height: '70vh', display: 'flex', flexDirection: 'column'}}>
                                 <h2>Build Your Fashion Empire</h2>
@@ -102,8 +133,24 @@ const Index = () => {
                             <div className="hero-body columns" style={{padding: 0, marginBottom: 0}}>
                               <div className="column is-5 has-text-centered formscreen-right sessions-screen py-6 px-6" style={{backgroundColor: 'white', height: '100vh', justifyContent: 'center'}}>
                                 <div className="is-mobile columns session-img-container mb-3">
-                                  <StaticImage src="../images/sessions/session1.jpg" alt="Baffs session 1" className="column session-img" style={{transform: 'rotate(-12deg'}} />
-                                  <StaticImage src="../images/sessions/session2.jpg" alt="Baffs session 2" className="column session-img" style={{transform: 'rotate(12deg'}} />
+                                  <StaticImage 
+                                    src="../images/sessions/session1.jpg" 
+                                    alt="Baffs session 1" 
+                                    className="column session-img" 
+                                    style={{transform: 'rotate(-12deg'}}
+                                    placeholder="blurred"
+                                    loading="lazy"
+                                    formats={["auto", "webp"]}
+                                  />
+                                  <StaticImage 
+                                    src="../images/sessions/session2.jpg" 
+                                    alt="Baffs session 2" 
+                                    className="column session-img" 
+                                    style={{transform: 'rotate(12deg'}}
+                                    placeholder="blurred"
+                                    loading="lazy"
+                                    formats={["auto", "webp"]}
+                                  />
                                 </div>
                                 <h4 className="has-text-left has-text-justified-mobile is-size-5-mobile">
                                   We invited some of our fave fashionistas over to talk to us about their style
@@ -120,10 +167,26 @@ const Index = () => {
                               </div>
                               <div className="column columns is-7 is-desktop">
                                   <div className="column is-half session-img-container">
-                                    <StaticImage src="../images/sessions/session1.jpg" alt="Baffs session 1" className="session-img" style={{transform: 'rotate(-12deg'}} />
+                                    <StaticImage 
+                                      src="../images/sessions/session1.jpg" 
+                                      alt="Baffs session 1" 
+                                      className="session-img" 
+                                      style={{transform: 'rotate(-12deg'}}
+                                      placeholder="blurred"
+                                      loading="lazy"
+                                      formats={["auto", "webp"]}
+                                    />
                                   </div>
                                   <div className="column is-half session-img-container">
-                                    <StaticImage src="../images/sessions/session2.jpg" alt="Baffs session 2" className="session-img" style={{transform: 'rotate(12deg'}} />
+                                    <StaticImage 
+                                      src="../images/sessions/session2.jpg" 
+                                      alt="Baffs session 2" 
+                                      className="session-img" 
+                                      style={{transform: 'rotate(12deg'}}
+                                      placeholder="blurred"
+                                      loading="lazy"
+                                      formats={["auto", "webp"]}
+                                    />
                                   </div>
                               </div>
                             </div>
