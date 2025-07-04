@@ -21,10 +21,10 @@ const Index = () => {
   const screenData = { currentScreen, setCurrentScreen }
 
   const landingScreen = <Screen isPrevScreen={true} isNextScreen={false} screenData={screenData}>
-                    <div className="hero-body" style={{justifyContent: 'center'}}>
-                      <StaticImage src='../images/hero image.png' alt="the app for fashion lovers" placeholder="blurred" />
-                    </div>
-                  </Screen>
+                          <div className="hero-body" style={{justifyContent: 'center'}}>
+                            <StaticImage src='../images/hero image.png' alt="the app for fashion lovers" placeholder="blurred" />
+                          </div>
+                        </Screen>
 
 
   const formScreen = <Screen isPrevScreen={false} isNextScreen={true} screenData={screenData}>
@@ -51,6 +51,52 @@ const Index = () => {
                       </div>
                     </div>
                   </Screen>
+
+  const featuresScreen = <Screen isPrevScreen={true} isNextScreen={true} screenData={screenData}>
+                            <div className="hero-body columns pt-5 px-5" style={{padding: 0, marginBottom: 0, alignItems: 'unset'}}>
+                              <div className='column is-6' style={{backgroundColor: 'white', height: '70vh', display: 'flex', justifyContent: 'center'}}>
+                                <StaticImage src="../images/screens/profile.png" alt="Profile screen 1" style={{maxHeight: '100%', width: 'auto', height: '100%', objectFit: 'contain', display: 'flex'}} imgStyle={{objectFit: 'contain', maxHeight: '100%', width: 'auto', height: '100%'}}/>
+                              </div>
+                              <div className="column is-6 py-6 px-6 has-text-centered" style={{backgroundColor: 'white', height: '70vh', display: 'flex', flexDirection: 'column'}}>
+                                <h2>Create a Profile</h2>
+                                <p className='my-3 is-size-4'>Sign up to Baffs</p>
+                                <a href="https://forms.gle/dYCpogFHmwuBqrhW9" target="_blank" rel="noopener noreferrer">
+                                  <button className="button is-primary is-size-4 is-size-5-mobile my-6">
+                                    <span role="img" aria-label="rocket emoji" className="mr-2">🚀</span>
+                                      Sign up for take off
+                                    <span role="img" aria-label="rocket emoji" className="ml-2">🚀</span>
+                                  </button>
+                                </a>
+                              </div>
+                            </div>
+                            <div className="hero-body columns pt-5 px-5" style={{padding: 0, marginBottom: 0, alignItems: 'unset'}}>
+                              <div className="column is-6 py-6 px-6 has-text-centered" style={{backgroundColor: 'white', height: '70vh', display: 'flex', flexDirection: 'column'}}>
+                                <h2>Upload Item</h2>
+                                <p className='my-3 is-size-4'>Sign up to Baffs</p>
+                              </div>
+                              <div className='column is-6' style={{backgroundColor: 'white', height: '70vh', display: 'flex', justifyContent: 'center'}}>
+                                <StaticImage src="../images/screens/upload.png" alt="Profile screen 1" style={{maxHeight: '100%', width: 'auto', height: '100%', objectFit: 'contain', display: 'flex'}} imgStyle={{objectFit: 'contain', maxHeight: '100%', width: 'auto', height: '100%'}}/>
+                              </div>
+                            </div>
+                            <div className="hero-body columns pt-5 pb-5 px-5" style={{padding: 0, marginBottom: 0, alignItems: 'unset'}}>
+                              <div className='column is-6' style={{backgroundColor: 'white', height: '70vh', display: 'flex', justifyContent: 'center'}}>
+                                <StaticImage src="../images/screens/sold.png" alt="Profile screen 1" style={{maxHeight: '100%', width: 'auto', height: '100%', objectFit: 'contain', display: 'flex'}} imgStyle={{objectFit: 'contain', maxHeight: '100%', width: 'auto', height: '100%'}}/>
+                              </div>
+                              <div className="column is-6 py-6 px-6 has-text-centered" style={{backgroundColor: 'white', height: '70vh', display: 'flex', flexDirection: 'column'}}>
+                                <h2>Build Your Fashion Empire</h2>
+                                <p className='my-3 is-size-4'>Sign up to Baffs</p>
+                              </div>
+                            </div>
+                            <div className="form-button" style={{background: 'white'}}>
+                              <a href="https://forms.gle/dYCpogFHmwuBqrhW9" target="_blank" rel="noopener noreferrer">
+                                <button className="button is-primary is-large is-size-3 is-size-4-mobile my-6">
+                                  <span role="img" aria-label="rocket emoji" className="mr-2">🚀</span>
+                                    Sign up for take off
+                                  <span role="img" aria-label="rocket emoji" className="ml-2">🚀</span>
+                                </button>
+                              </a>
+                            </div>
+                          </Screen>
 
   const sessionsScreen = <Screen isPrevScreen={true} isNextScreen={true} screenData={screenData}>
                             <div className="hero-body columns" style={{padding: 0, marginBottom: 0}}>
@@ -83,7 +129,7 @@ const Index = () => {
                             </div>
                           </Screen>
   
-  const screens = [ formScreen, sessionsScreen, landingScreen ]
+  const screens = [ formScreen, featuresScreen, sessionsScreen, landingScreen ]
 
   return (
     <section className="hero is-fullheight is-primary" style={{ backgroundImage: `url(${bgImage})` }}>
